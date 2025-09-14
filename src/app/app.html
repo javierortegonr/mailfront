@@ -9,11 +9,11 @@
 
 
 
-<main class="main">
-  <div class="content">
- 
-  </div>
-</main>
+<nav style="margin-bottom: 24px;">
+  <a [routerLink]="['/usuarios']" routerLinkActive="active" style="margin-right: 16px;">Lista de Usuarios</a>
+  <a [routerLink]="['/registrar']" routerLinkActive="active">Registrar Usuario</a>
+</nav>
+<router-outlet></router-outlet>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->

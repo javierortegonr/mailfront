@@ -18,4 +18,8 @@ export class UserService {
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl);
   }
+
+  createUser(user: Omit<User, 'id'>): Observable<User> {
+    return this.http.post<User>(this.apiUrl, user);
+  }
 }
